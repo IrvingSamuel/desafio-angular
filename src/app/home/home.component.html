@@ -1,0 +1,117 @@
+
+<header>
+    <div class="header-area header-transparent">
+      <div class="main-header ">
+        <div class="header-bottom  header-sticky">
+          <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between flex-wrap position-relative" style="padding-top: 15px; padding-bottom: 15px;">
+  
+              <div class="logo">
+                <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page"><img width="80" src="assets/images/ms-logo.png" alt=""> Mesha Sound</a>
+              </div>
+              <div class="header-right-btn f-right  ml-15">
+                <a routerLink="/history" routerLinkActive="active" ariaCurrentWhenActive="page" class="btn_01 header-btn">Histórico <i class="fa-solid fa-clock-rotate-left" style="font-size: 20px;"></i></a>
+              </div>
+  
+              <div class="col-12">
+                <div class="mobile_menu d-block d-lg-none"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+  
+    <div class="slider-area position-relative">
+      <div class="slider-active">
+  
+        <div class="single-slider slider-height slider-bg1 d-flex align-items-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-xxl-6 col-xl-6 col-lg-7 col-md-9 col-sm-12">
+                <div class="hero-caption text-center">
+                  <span>Simples, rápido e preciso!</span>
+                  <h1 data-animation="fadeInUp" data-delay=".2s">Escolha sua playlist da maneira mais intuitiva possível!</h1>
+                  <div class="double-btn d-flex flex-wrap justify-content-center">
+                    <input id="cidade" type="text" class="input-cidade mr-15" data-animation="fadeInLeft" placeholder="Digite sua Cidade"/>
+                    <a href="#" class="btn_01 mr-15" onclick="getWeather($('#cidade').val())" data-animation="fadeInLeft" data-delay=".6s">Gerar Playlist</a>
+                  </div>
+                  <div class="double-btn d-flex flex-wrap justify-content-left">
+                    <span class="mt-15 ml-45" id="error-text" style="color: red;"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-10 col-xl-9 col-lg-9 col-md-11 col-sm-12">
+                <div id="content" class="container mb-25">
+                    
+                </div>
+              </div>
+              <div id="hero-image" class="col-xxl-10 col-xl-9 col-lg-9 col-md-11 col-sm-12">
+                <div class="hero-desktop-img">
+                  <img src="assets/img/hero/hero-desktop.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+    <section class="about-area1 section-padding">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xxl-5 col-xl-5 col-lg-6 col-md-8 col-sm-10">
+  
+            <div class="about-img about-img1  ">
+              <img src="assets/img/gallery/about1.png" alt="">
+            </div>
+          </div>
+          <div class="offset-xl-1 col-xxl-5 col-xl-5 col-lg-6 col-md-9">
+            <div class="about-caption about-caption1">
+  
+              <div class="section-tittle mb-30">
+                <img width="80" src="assets/images/ms-logo.png" alt="" class="mb-25">
+                <h2>Playlist personalizada<br> de acordo com o clima atual</h2>
+              </div>
+  
+              <div class="about-single mb-30 d-flex">
+                <div class="icon">
+                  <img src="assets/img/icon/number1.svg" alt="">
+                </div>
+                <div class="pera">
+                  <p>Informe sua cidade.</p>
+                </div>
+              </div>
+  
+              <div class="about-single mb-30 d-flex">
+                <div class="icon">
+                  <img src="assets/img/icon/number2.svg" alt="">
+                </div>
+                <div class="pera">
+                  <p>Receba uma playlist baseada no clima.</p>
+                </div>
+              </div>
+  
+              <div class="about-single mb-30 d-flex">
+                <div class="icon">
+                  <img src="assets/img/icon/number3.svg" alt="">
+                </div>
+                <div class="pera">
+                  <p>Use e reuse as playlists como quiser!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  </main>
+  
+  <div id="back-top">
+    <a title="Go to Top" href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+  </div>  
