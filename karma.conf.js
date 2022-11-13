@@ -1,5 +1,16 @@
 // Karma configuration file, see link for more information
 // https://karma-runner.github.io/1.0/config/configuration-file.html
+require("phantomjs-polyfill");
+require("karma-es6-shim");
+
+var path = require("path");
+var webpackConfig = require("./webpack.config.karma");
+var entry = path.resolve(webpackConfig.context, webpackConfig.entry.app);
+var testManifest = path.resolve(webpackConfig.context, "./test-manifest.js");
+
+var preprocessors = {};
+preprocessors[entry] = ["webpack"];
+preprocessors[testManifest] = ["webpack"];
 
 module.exports = function (config) {
   config.set({

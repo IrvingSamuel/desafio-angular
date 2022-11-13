@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+declare function getWeather(): any;
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
